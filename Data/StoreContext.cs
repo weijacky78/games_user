@@ -12,6 +12,7 @@ public class StoreContext : DbContext
     {
     }
 
-    public DbSet<rp_ef_maria.Models.Game> Game { get; set; } = default!;
-    public DbSet<rp_ef_maria.Models.Rating> Rating { get; set; } = default!;
+    public DbSet<Game> Game { get; set; } = default!;
+    public DbSet<Rating> Rating { get; set; } = default!;
+    public DbSet<SiteUser> SiteUser { get; set; } = default!;
 }

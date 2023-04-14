@@ -1,0 +1,44 @@
+@page
+@model ProfileModel
+@{
+    ViewData["Title"] = "Edit your Profile";
+}
+<h1>@ViewData["Title"]</h1>
+
+<p>Use this page to edit your user profile.</p>
+
+<form method="post">
+    <div class="form-group">
+        <label asp-for="SiteUser.Username"></label>
+        <input asp-for="SiteUser.Username" />
+        <span asp-validation-for="SiteUser.Username"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="SiteUser.Email"></label>
+        <input asp-for="SiteUser.Email" />
+        <span asp-validation-for="SiteUser.Email"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="SiteUser.PhoneNumber"></label>
+        <input asp-for="SiteUser.PhoneNumber" />
+        <span asp-validation-for="SiteUser.PhoneNumber"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="SiteUser.MailingAddress"></label>
+        <input asp-for="SiteUser.MailingAddress" />
+        <span asp-validation-for="SiteUser.MailingAddress"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="SiteUser.FirstName"></label>
+        <input asp-for="SiteUser.FirstName" />
+        <span asp-validation-for="SiteUser.FirstName"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="SiteUser.LastName"></label>
+        <input asp-for="SiteUser.LastName" />
+        <span asp-validation-for="SiteUser.LastName"></span>
+    </div>
+    <div class="form-group">
+        <input type="submit" value="Save" />
+    </div>
+</form>
